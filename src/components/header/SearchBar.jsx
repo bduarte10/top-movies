@@ -15,7 +15,9 @@ export function SearchBar() {
     setSearch('')
   }
   return (
-    <form onSubmit={handleSubmit} className="flex items-center">
+    <form
+      onSubmit={handleSubmit}
+      className="flex items-center space-x-2 pt-4 sm:pt-0">
       <input
         type="text"
         placeholder="Busque um filme"
@@ -25,7 +27,7 @@ export function SearchBar() {
       />
       <button
         type="submit"
-        className="bg-slate-400 hover:bg-slate-500 transition-colors duration-300 ease-in-out text-sm font-medium text-slate-50 rounded-md h-10 p-2 ml-2">
+        className="bg-slate-400 hover:bg-slate-500 transition-colors duration-300 ease-in-out text-sm font-medium text-slate-50 rounded-md h-10 p-2 ">
         Buscar
       </button>
     </form>
