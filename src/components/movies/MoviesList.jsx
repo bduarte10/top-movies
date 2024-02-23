@@ -20,8 +20,8 @@ export function MoviesList() {
   }, [])
 
   return (
-    <section className="max-w-7xl w-full mx-auto my-10">
-      <div className="grid grid-cols-4 gap-4">
+    <section className="max-w-7xl p-4 xl:p-0 w-full mx-auto my-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {movies?.map((movie) => (
           <MovieCard
             key={movie.id}

@@ -32,7 +32,7 @@ export function MovieDetails() {
   }, [id])
 
   return (
-    <section className="max-w-7xl h-full flex flex-row mt-20 gap-10 items-center  mx-auto">
+    <section className="max-w-7xl h-full flex flex-col md:flex-row mt-20 gap-10 items-center  mx-auto">
       {movie?.poster_path ? (
         <img
           src={`${imgUrl}${movie?.poster_path}`}
@@ -46,7 +46,7 @@ export function MovieDetails() {
           <FaFilm className="w-full h-full object-cover object-center text-slate-600" />
         </div>
       )}
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 p-4 ">
         <p className="text-2xl font-semibold text-white mb-5">
           {movie?.tagline}
         </p>

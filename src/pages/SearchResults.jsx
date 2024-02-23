@@ -24,11 +24,11 @@ export function SearchResults() {
   }, [query])
 
   return (
-    <div className="max-w-7xl h-full  mx-auto mt-10">
+    <div className="max-w-7xl h-full p-4 xl:0  mx-auto mt-10 ">
       <h2 className="text-3xl  text-slate-50 font-bold text-center">
         Resultados para: <span className="query-text">{query}</span>
       </h2>
-      <div className="grid grid-cols-4 gap-4 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10">
         {movies.length > 0 ? (
           movies.map((movie) => (
             <MovieCard
